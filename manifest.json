@@ -1,0 +1,22 @@
+{
+    "name":"Rock Paper Scissor",
+    "short_name":"RPSLSgame",
+    "start_url":"/index.html",
+    "display":"standalone",
+    "theme_color": "#172042",
+    "background_color":"#172042",
+    "orientation":"portrait-primary",
+    "icons":[
+        {
+            "src":"/images/icon-72x72.png",
+            "type":"image/png",
+            "sizes":"72x72"
+        },
+        {
+            "src":"/images/icon-152x152.png",
+            "type":"image/png",
+            "sizes":"152x152"
+        }
+    ]
+
+}
