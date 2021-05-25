@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+</head>
+<body>
+  <header class="header">
+    <ul class="game__options">
+      <li class="game__option">ROCK</li>
+      <li class="game__option">PAPER</li>
+      <li class="game__option">SCISSORS</li>
+      <li class="game__option">LIZARD</li>
+      <li class="game__option">SPOCK</li>
+    </ul>
+    <div class="game__scoreinfo">
+      <span class="game__scoretitle">SCORE</span>
+      <span class="game__scorenum">0</span>
+    </div>
+  </header>
+  <div class="handsign">
+    <img src="images/bg-pentagon.svg" class="handsign__pentagon" alt="pentagon" />
+    <div id="rock" class="handsign__sign handsign__sign--rock"><img src="images/icon-rock.svg" alt="rock"/></div>
+    <div id="paper" class="handsign__sign handsign__sign--paper"><img src="images/icon-paper.svg" alt="paper"/></div>
+    <div id="scissors" class="handsign__sign handsign__sign--scissors"><img src="images/icon-scissors.svg" alt="scissors"/></div>
+    <div id="lizard" class="handsign__sign handsign__sign--lizard"><img src="images/icon-lizard.svg" alt="lizard"/></div>
+    <div id="spock" class="handsign__sign handsign__sign--spock"><img src="images/icon-spock.svg" alt="spock"/></div>
+  </div>
+  <div class="handsignActive">
+    <div class="handsignActive__player handsignActive__player--user">
+      <h2 class="handsignActive__heading">You Picked</h2>
+    </div>
+    <div class="handsignActive__player handsignActive__player--comp"> 
+      <h2 class="handsignActive__heading">The House Picks</h2>
+      <div class="prewinner prewinner--comp">
+        <div class="handsign__sign handsign__sign--choice preview"></div>
+      </div>
+    </div>
+    <div class="decision">
+      <h2 class="decision__heading">YOU WIN</h2>
+      <button class="decision__button">PLAY AGAIN</button>
+    </div>
+  </div>
+  <footer class="footer">
+    <a href="#rules" class="rules">RULES</a>
+  </footer>
+  <div class="gamerules-modal" id="rules">
+    <div class="gamerules">
+      <div class="gamerules__header">
+        <h1 class="gamerules__h1">RULES</h1>
+        <a href="#"> <img class="gamerules__close" src="images/icon-close.svg" /></a>
+      </div>
+      <img src="images/image-rules-bonus.svg" class="gamerules__img">
+    </div>
+  </div>
+  <script src="js/script.js" ></script>
+</body>
+</html>
